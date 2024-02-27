@@ -63,7 +63,7 @@ def convert_google_ads_row_to_dict(google_ads_row):
             "created_by" : "GoogleAdsAPI-PythonScript",
             "updated_by" : "GoogleAdsAPI-PythonScript",
             "campaign_date": google_ads_row.segments.date,
-            
+            "load_source_key": f"{google_ads_row.customer.id}~{google_ads_row.ad_group.id}~{google_ads_row.ad_group_ad.ad.id}~{google_ads_row.campaign.id}~{google_ads_row.segments.date}"
     }
 
 def upload_to_db(converted_data, load_type,logger):
@@ -134,7 +134,7 @@ segments.date
 FROM ad_group_ad
 WHERE segments.date BETWEEN '2023-01-04' AND '{get_current_Day()}'
 ORDER BY
-campaign.id LIMIT 1500
+segments.date desc
 """
 
 # Set the file path

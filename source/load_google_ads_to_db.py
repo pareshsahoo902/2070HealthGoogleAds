@@ -31,9 +31,9 @@ def insertToDB(json_data,logger):
         INSERT INTO STG_GOOGLE_ADS (account_id, account_name, ad_group_id, ad_id, ad_group_name, 
             campaign_resource_name, campaign_id, campaign_name, campaign_start_date, campaign_end_date, 
             clicks, conversions, cost, impressions, ctr, cost_per_conversion, average_cost, 
-            average_cpc, conversions_from_interactions_rate,created_at,updated_at,created_by,updated_by,campaign_date
+            average_cpc, conversions_from_interactions_rate,created_at,updated_at,created_by,updated_by,campaign_date,load_source_key
         )
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s,%s,%s,%s)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s,%s,%s,%s,%s)
         """
         logger.log_info(f"Insert operation executed for {len(json_data)} \n Progress : \n")
         # Loop through the JSON data and insert each record into the table
@@ -47,7 +47,12 @@ def insertToDB(json_data,logger):
 
         # Commit the transaction and close the connection
         connection.commit()
-        logger.log_info(f"Closing Connection with Database")
+        logger.log_info(f"Merging Table STG_GOOGLE_ADS to GOOGLE_ADS")
+        cursor.execute("CALL MERGE_GOOGLE_ADS_DATA()")
+        logger.log_info(f"Tables are merged ")
+        logger.log_info(f"GOOGLE ADS TABLE UPDATED")
+        connection.commit()
+        logger.log_info(f"Clossing connection")
 
         connection.close()
 

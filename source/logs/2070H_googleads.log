@@ -27,3 +27,126 @@
 2024-02-27 17:48:19 - INFO - 1500 rows loaded and committed. ====>> Progress: 100.00/100
 2024-02-27 17:48:19 - INFO - Closing Connection with Database
 2024-02-27 17:48:19 - INFO - Data saved to DATABASE via INSERT Operation..
+2024-02-27 18:36:05 - INFO - Fetching Google ads Data for Customer ID : 1580734935
+2024-02-27 18:36:05 - ERROR - Error: unsupported operand type(s) for +: 'int' and 'str'
+2024-02-27 18:38:11 - INFO - Fetching Google ads Data for Customer ID : 1580734935
+2024-02-27 18:38:11 - INFO - Fetched 1500 records from Google Ads.
+2024-02-27 18:38:11 - INFO - Uploading 1500 records to STG DB
+2024-02-27 18:38:12 - INFO - Connecting to nivaancare_production with host stg-nivaancare-mysql-01.cydlopxelbug.ap-south-1.rds.amazonaws.com
+2024-02-27 18:38:12 - INFO - Connected to MySQL Server : 8.0.35
+2024-02-27 18:38:12 - INFO - Initiating Full Load : truncating table STG_GOOGLE_ADS
+2024-02-27 18:38:12 - INFO - STG_GOOGLE_ADS truncated.
+2024-02-27 18:38:12 - INFO - Insert operation executed for 1500 
+ Progress : 
+
+2024-02-27 18:38:33 - INFO - 500 rows loaded and committed. ====>> Progress: 33.33/100
+2024-02-27 18:38:54 - INFO - 1000 rows loaded and committed. ====>> Progress: 66.67/100
+2024-02-27 18:39:15 - INFO - 1500 rows loaded and committed. ====>> Progress: 100.00/100
+2024-02-27 18:39:15 - INFO - Closing Connection with Database
+2024-02-27 18:39:15 - INFO - Data saved to DATABASE via INSERT Operation..
+2024-02-27 18:46:31 - INFO - Fetching Google ads Data for Customer ID : 1580734935
+2024-02-27 18:46:31 - INFO - Fetched 1500 records from Google Ads.
+2024-02-27 18:46:31 - INFO - Uploading 1500 records to STG DB
+2024-02-27 18:46:31 - INFO - Connecting to nivaancare_production with host stg-nivaancare-mysql-01.cydlopxelbug.ap-south-1.rds.amazonaws.com
+2024-02-27 18:46:32 - INFO - Connected to MySQL Server : 8.0.35
+2024-02-27 18:46:32 - INFO - Initiating Full Load : truncating table STG_GOOGLE_ADS
+2024-02-27 18:46:32 - INFO - STG_GOOGLE_ADS truncated.
+2024-02-27 18:46:32 - INFO - Insert operation executed for 1500 
+ Progress : 
+
+2024-02-27 18:46:53 - INFO - 500 rows loaded and committed. ====>> Progress: 33.33/100
+2024-02-27 18:47:14 - INFO - 1000 rows loaded and committed. ====>> Progress: 66.67/100
+2024-02-27 18:47:34 - INFO - 1500 rows loaded and committed. ====>> Progress: 100.00/100
+2024-02-27 18:47:34 - INFO - Merging Table STG_GOOGLE_ADS to GOOGLE_ADS
+2024-02-27 18:47:34 - INFO - Tables are merged 
+2024-02-27 18:47:34 - INFO - GOOGLE ADS TABLE UPDATED
+2024-02-27 18:47:34 - INFO - Clossing connection
+2024-02-27 18:47:34 - INFO - Data saved to DATABASE via INSERT Operation..
+2024-02-27 18:48:26 - INFO - Fetching Google ads Data for Customer ID : 1580734935
+2024-02-27 18:48:27 - INFO - Fetched 1500 records from Google Ads.
+2024-02-27 18:48:27 - INFO - Uploading 1500 records to STG DB
+2024-02-27 18:48:27 - INFO - Connecting to nivaancare_production with host stg-nivaancare-mysql-01.cydlopxelbug.ap-south-1.rds.amazonaws.com
+2024-02-27 18:48:27 - INFO - Connected to MySQL Server : 8.0.35
+2024-02-27 18:48:27 - INFO - Initiating Full Load : truncating table STG_GOOGLE_ADS
+2024-02-27 18:48:27 - INFO - STG_GOOGLE_ADS truncated.
+2024-02-27 18:48:27 - INFO - Insert operation executed for 1500 
+ Progress : 
+
+2024-02-27 18:48:48 - INFO - 500 rows loaded and committed. ====>> Progress: 33.33/100
+2024-02-27 18:49:09 - INFO - 1000 rows loaded and committed. ====>> Progress: 66.67/100
+2024-02-27 18:49:29 - INFO - 1500 rows loaded and committed. ====>> Progress: 100.00/100
+2024-02-27 18:49:29 - INFO - Merging Table STG_GOOGLE_ADS to GOOGLE_ADS
+2024-02-27 18:49:30 - INFO - Tables are merged 
+2024-02-27 18:49:30 - INFO - GOOGLE ADS TABLE UPDATED
+2024-02-27 18:49:30 - INFO - Clossing connection
+2024-02-27 18:49:30 - INFO - Data saved to DATABASE via INSERT Operation..
+2024-02-27 18:50:06 - ERROR - Error: (<_SingleThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Request contains an invalid argument."
+	debug_error_string = "UNKNOWN:Error received from peer ipv6:%5B2404:6800:4002:81f::200a%5D:443 {grpc_message:"Request contains an invalid argument.", grpc_status:3, created_time:"2024-02-27T18:50:06.688078+05:30"}"
+>, <_SingleThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Request contains an invalid argument."
+	debug_error_string = "UNKNOWN:Error received from peer ipv6:%5B2404:6800:4002:81f::200a%5D:443 {grpc_message:"Request contains an invalid argument.", grpc_status:3, created_time:"2024-02-27T18:50:06.688078+05:30"}"
+>, errors {
+  error_code {
+    query_error: UNEXPECTED_INPUT
+  }
+  message: "Error in query: unexpected input ß."
+}
+request_id: "SjAGhv_RU6W5cRJGo96Aww"
+, 'SjAGhv_RU6W5cRJGo96Aww')
+2024-02-27 18:50:41 - INFO - Fetching Google ads Data for Customer ID : 1580734935
+2024-02-27 18:50:42 - INFO - Fetched 19653 records from Google Ads.
+2024-02-27 18:50:42 - INFO - Uploading 19653 records to STG DB
+2024-02-27 18:50:42 - INFO - Connecting to nivaancare_production with host stg-nivaancare-mysql-01.cydlopxelbug.ap-south-1.rds.amazonaws.com
+2024-02-27 18:50:42 - INFO - Connected to MySQL Server : 8.0.35
+2024-02-27 18:50:42 - INFO - Initiating Full Load : truncating table STG_GOOGLE_ADS
+2024-02-27 18:50:42 - INFO - STG_GOOGLE_ADS truncated.
+2024-02-27 18:50:42 - INFO - Insert operation executed for 19653 
+ Progress : 
+
+2024-02-27 18:51:03 - INFO - 500 rows loaded and committed. ====>> Progress: 2.54/100
+2024-02-27 18:51:24 - INFO - 1000 rows loaded and committed. ====>> Progress: 5.09/100
+2024-02-27 18:51:45 - INFO - 1500 rows loaded and committed. ====>> Progress: 7.63/100
+2024-02-27 18:52:06 - INFO - 2000 rows loaded and committed. ====>> Progress: 10.18/100
+2024-02-27 18:52:26 - INFO - 2500 rows loaded and committed. ====>> Progress: 12.72/100
+2024-02-27 18:52:47 - INFO - 3000 rows loaded and committed. ====>> Progress: 15.26/100
+2024-02-27 18:53:08 - INFO - 3500 rows loaded and committed. ====>> Progress: 17.81/100
+2024-02-27 18:53:28 - INFO - 4000 rows loaded and committed. ====>> Progress: 20.35/100
+2024-02-27 18:53:49 - INFO - 4500 rows loaded and committed. ====>> Progress: 22.90/100
+2024-02-27 18:54:10 - INFO - 5000 rows loaded and committed. ====>> Progress: 25.44/100
+2024-02-27 18:54:30 - INFO - 5500 rows loaded and committed. ====>> Progress: 27.99/100
+2024-02-27 18:54:51 - INFO - 6000 rows loaded and committed. ====>> Progress: 30.53/100
+2024-02-27 18:55:12 - INFO - 6500 rows loaded and committed. ====>> Progress: 33.07/100
+2024-02-27 18:55:33 - INFO - 7000 rows loaded and committed. ====>> Progress: 35.62/100
+2024-02-27 18:55:53 - INFO - 7500 rows loaded and committed. ====>> Progress: 38.16/100
+2024-02-27 18:56:14 - INFO - 8000 rows loaded and committed. ====>> Progress: 40.71/100
+2024-02-27 18:56:35 - INFO - 8500 rows loaded and committed. ====>> Progress: 43.25/100
+2024-02-27 18:56:56 - INFO - 9000 rows loaded and committed. ====>> Progress: 45.79/100
+2024-02-27 18:57:17 - INFO - 9500 rows loaded and committed. ====>> Progress: 48.34/100
+2024-02-27 18:57:39 - INFO - 10000 rows loaded and committed. ====>> Progress: 50.88/100
+2024-02-27 18:58:00 - INFO - 10500 rows loaded and committed. ====>> Progress: 53.43/100
+2024-02-27 18:58:21 - INFO - 11000 rows loaded and committed. ====>> Progress: 55.97/100
+2024-02-27 18:58:42 - INFO - 11500 rows loaded and committed. ====>> Progress: 58.52/100
+2024-02-27 18:59:03 - INFO - 12000 rows loaded and committed. ====>> Progress: 61.06/100
+2024-02-27 18:59:23 - INFO - 12500 rows loaded and committed. ====>> Progress: 63.60/100
+2024-02-27 18:59:44 - INFO - 13000 rows loaded and committed. ====>> Progress: 66.15/100
+2024-02-27 19:00:07 - INFO - 13500 rows loaded and committed. ====>> Progress: 68.69/100
+2024-02-27 19:00:28 - INFO - 14000 rows loaded and committed. ====>> Progress: 71.24/100
+2024-02-27 19:00:49 - INFO - 14500 rows loaded and committed. ====>> Progress: 73.78/100
+2024-02-27 19:01:13 - INFO - 15000 rows loaded and committed. ====>> Progress: 76.32/100
+2024-02-27 19:01:33 - INFO - 15500 rows loaded and committed. ====>> Progress: 78.87/100
+2024-02-27 19:01:56 - INFO - 16000 rows loaded and committed. ====>> Progress: 81.41/100
+2024-02-27 19:02:17 - INFO - 16500 rows loaded and committed. ====>> Progress: 83.96/100
+2024-02-27 19:02:37 - INFO - 17000 rows loaded and committed. ====>> Progress: 86.50/100
+2024-02-27 19:02:59 - INFO - 17500 rows loaded and committed. ====>> Progress: 89.04/100
+2024-02-27 19:03:20 - INFO - 18000 rows loaded and committed. ====>> Progress: 91.59/100
+2024-02-27 19:03:40 - INFO - 18500 rows loaded and committed. ====>> Progress: 94.13/100
+2024-02-27 19:04:01 - INFO - 19000 rows loaded and committed. ====>> Progress: 96.68/100
+2024-02-27 19:04:22 - INFO - 19500 rows loaded and committed. ====>> Progress: 99.22/100
+2024-02-27 19:04:28 - INFO - Merging Table STG_GOOGLE_ADS to GOOGLE_ADS
+2024-02-27 19:04:30 - INFO - Tables are merged 
+2024-02-27 19:04:30 - INFO - GOOGLE ADS TABLE UPDATED
+2024-02-27 19:04:30 - INFO - Clossing connection
+2024-02-27 19:04:30 - INFO - Data saved to DATABASE via INSERT Operation..
