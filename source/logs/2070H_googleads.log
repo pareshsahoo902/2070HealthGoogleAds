@@ -1,0 +1,29 @@
+2024-02-27 17:43:55 - ERROR - Error: name 'customer_id' is not defined
+2024-02-27 17:44:49 - INFO - Fetching Google ads Data for Customer ID : 1580734935
+2024-02-27 17:44:49 - INFO - Fetched 1500 records from Google Ads.
+2024-02-27 17:44:49 - INFO - Uploading 1500 records to STG DB
+2024-02-27 17:44:49 - INFO - Connecting to nivaancare_production with host stg-nivaancare-mysql-01.cydlopxelbug.ap-south-1.rds.amazonaws.com
+2024-02-27 17:44:49 - INFO - Connected to MySQL Server : 8.0.35
+2024-02-27 17:44:50 - INFO - Initiating Full Load : truncating table STG_GOOGLE_ADS
+2024-02-27 17:44:50 - INFO - STG_GOOGLE_ADS truncated.
+2024-02-27 17:44:50 - INFO - Insert operation executed for 1500 
+ Progress : 
+
+2024-02-27 17:45:12 - INFO - 500 rows loaded and committed. ====>> Progress: 33.33/100
+2024-02-27 17:45:35 - INFO - 1000 rows loaded and committed. ====>> Progress: 66.67/100
+2024-02-27 17:45:57 - INFO - 1500 rows loaded and committed. ====>> Progress: 100.00/100
+2024-02-27 17:47:10 - INFO - Fetching Google ads Data for Customer ID : 1580734935
+2024-02-27 17:47:10 - INFO - Fetched 1500 records from Google Ads.
+2024-02-27 17:47:10 - INFO - Uploading 1500 records to STG DB
+2024-02-27 17:47:10 - INFO - Connecting to nivaancare_production with host stg-nivaancare-mysql-01.cydlopxelbug.ap-south-1.rds.amazonaws.com
+2024-02-27 17:47:10 - INFO - Connected to MySQL Server : 8.0.35
+2024-02-27 17:47:10 - INFO - Initiating Full Load : truncating table STG_GOOGLE_ADS
+2024-02-27 17:47:10 - INFO - STG_GOOGLE_ADS truncated.
+2024-02-27 17:47:10 - INFO - Insert operation executed for 1500 
+ Progress : 
+
+2024-02-27 17:47:33 - INFO - 500 rows loaded and committed. ====>> Progress: 33.33/100
+2024-02-27 17:47:55 - INFO - 1000 rows loaded and committed. ====>> Progress: 66.67/100
+2024-02-27 17:48:19 - INFO - 1500 rows loaded and committed. ====>> Progress: 100.00/100
+2024-02-27 17:48:19 - INFO - Closing Connection with Database
+2024-02-27 17:48:19 - INFO - Data saved to DATABASE via INSERT Operation..
