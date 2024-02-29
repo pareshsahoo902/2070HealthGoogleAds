@@ -66,19 +66,12 @@ def convert_google_ads_row_to_dict(google_ads_row):
             "load_source_key": f"{google_ads_row.customer.id}~{google_ads_row.ad_group.id}~{google_ads_row.ad_group_ad.ad.id}~{google_ads_row.campaign.id}~{google_ads_row.segments.date}"
     }
 
-def upload_to_db(converted_data, load_type,logger):
+def upload_to_db(converted_data,logger):
     try:
-        if load_type == 'INSERT':
-            insertToDB(converted_data,logger)
-            logger.log_info(f"Data saved to DATABASE via INSERT Operation..")
-            print(f"Data saved to DATABASE via INSERT Operation..")
-        elif load_type == 'UPSERT':
-            upsertToDB(converted_data)
-            logger.log_info(f"Data saved to DATABASE via UPSERT Operation..")
-            print(f"Data saved to DATABASE via INSERT Operation..")
-        else:
-            print(f"Invalid Load Type choose from : (INSERT/UPSERT)")
-
+        insertToDB(converted_data,logger)
+        logger.log_info(f"Data saved to DATABASE via INSERT Operation..")
+        print(f"Data saved to DATABASE via INSERT Operation..")
+     
     except Exception as e:
         print(f"Error saving to DB: {e}")
     finally:
@@ -164,7 +157,8 @@ try:
         # save_to_json(converted_data, file_path)
         logger.log_info(f"Fetched {len(converted_data)} records from Google Ads.")
         logger.log_info(f"Uploading {len(converted_data)} records to STG DB")
-        upload_to_db(converted_data,"INSERT",logger=logger)
+        #Insert Function for DB
+        upload_to_db(converted_data,logger=logger)
     else:
         logger.log_info(f"No Google Ads Data Found Stopping Job...")
         
